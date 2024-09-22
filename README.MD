@@ -1,3 +1,5 @@
+![Repo-Image](https://druffko.gg/github-images/getUserInfo.png)
+
 <h1 align="center">getUserInfo</h1>
 
 
