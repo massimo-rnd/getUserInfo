@@ -1,67 +1,37 @@
-![Repo-Image](https://druffko.gg/github-images/getUserInfo.png)
-
-<h1 align="center">getUserInfo</h1>
-
+![Repo-Image](https://massimo.gg/github-images/getuserinfo.webp)
 
 <div align="center">
-  <strong>A simple Wordpress Plugin that shows lots of Userinfo</strong>
+
+# getUserInfo
+
+![License](https://img.shields.io/github/license/massimo-rnd/getUserInfo)
+![Issues](https://img.shields.io/github/issues/massimo-rnd/getUserInfo)
+![Forks](https://img.shields.io/github/forks/massimo-rnd/getUserInfo)
+![Stars](https://img.shields.io/github/stars/massimo-rnd/getUserInfo)
+![Last Commit](https://img.shields.io/github/last-commit/massimo-rnd/getUserInfo)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/massimo-rnd/getUserInfo?include_prereleases)
+
 </div>
 
-<br />
+## 🚀 Overview
 
-<div align="center">
-  <!-- Stability -->
-  <a href="#">
-    <img src="https://img.shields.io/badge/stability-production-brightgreen.svg?style=flat-square"
-      alt="Plugin stability" />
-  </a>
-  <!-- NPM version -->
-  <a href="#">
-    <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/druffko/getUserInfo?include_prereleases&style=flat-square">
-  </a>
-  <!-- Downloads -->
-  <a href="#">
-    <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/druffko/getUserInfo/total?style=flat-square">
-  </a>
-</div>
+A simple Wordpress Plugin that shows lots of Userinfo
 
-<div align="center">
-  <h3>
-    <a href="https://github.com/druffko/getUserInfo/releases">
-      Download
-    </a>
-    <span> | </span>
-    <a href="https://wpdemo.hostedby.me/getuserinfo-demo/">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="https://github.com/druffko/getUserInfo/issues">
-      Issues
-    </a>
-  </h3>
-</div>
-
-<div align="center">
-  <sub>The little plugin that can. Built with ❤︎ by
-  <a href="https://druffko.gg">druffko</a> and
-  <a href="https://github.com/druffko/getUserInfo/graphs/contributors">
-    contributors
-  </a>
-</div>
-
-## Table of Contents
-- [Features](#features)
-- [Usage](#usage)
-- [Make it better](#make-it-better)
-- [More Info](#more-info)
-
-
-## Features
-Well, it pretty much explains itself. This Plugin shows lots of user info on any Wordpress page, you use the shortcodes on.
+This Plugin shows lots of user info on any Wordpress page, you use the shortcodes on.
 
 This Plugin could be useful for tech-supporters, that use Wordpress as their CMS, to get the users IP easier, if the user has no idea how to find it. I'm pretty sure there are many more cases, but I can't think of a single one right now.
 
-## Usage
+## 🎯 Features
+
+- Show UserIP
+- Show Hostname
+- Show OS
+- Show Device
+- Show Browser
+
+
+## 💻 Usage
+
 To get this plugin to work, just go to any page and insert the shortcode.
 
 Use <code>[gui_show_ip]</code> to show the Users IP Address<br>
@@ -72,33 +42,40 @@ Use <code>[gui_show_browser]</code> to show the Users Browser<br>
 
 That's it. Save the page and review your changes.
 
-## More info
-### Why isn't this plugin on Wordpress.org?
-Well, honestly, I am just too lazy to do it. Maybe it'll be on there some time.
+## 🚧 Roadmap
+
+- [ ] Add support for IPv6
+
+Check out the [open issues](https://github.com/massimo-rnd/getUserInfo/issues) for more.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to check the [issues page](https://github.com/massimo-rnd/getUserInfo/issues).
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📊 Repository Metrics
+
+![Repo Size](https://img.shields.io/github/repo-size/massimo-rnd/getUserInfo)
+![Contributors](https://img.shields.io/github/contributors/massimo-rnd/getUserInfo)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/massimo-rnd/getUserInfo)
 
 ---
 
-## Contributing
+### 📞 Contact
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature-name`)
-5. Open a pull request
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Contact
-
-- **druffko** - [@druffko](https://twitter.com/druffko) - hi@druffko.gg
-- **Project Link** - https://github.com/druffko/getUserInfo
-
-Feel free to reach out if you have any questions or suggestions!
+For any inquiries, feel free to reach out:
+- email: [hi@massimo.gg](mailto:hi@massimo.gg)
+- X: [massimo-rnd](https://x.com/massimo-rnd)
+- [Discord](https://discord.gg/wmC5AA6c)
