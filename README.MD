@@ -42,12 +42,6 @@ Use <code>[gui_show_browser]</code> to show the Users Browser<br>
 
 That's it. Save the page and review your changes.
 
-## 🚧 Roadmap
-
-- [ ] Add support for IPv6
-
-Check out the [open issues](https://github.com/massimo-rnd/getUserInfo/issues) for more.
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!  

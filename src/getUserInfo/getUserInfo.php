@@ -1,28 +1,38 @@
 <?php
 /*
 Plugin Name: getUserInfo
-Plugin URI: https://github.com/druffko/getUserInfo
+Plugin URI: https://github.com/massimo-rnd/getUserInfo
 Description: A simple plugin to enable showing the current users IP address and hostname. You can use the shortcode [show_ip] to view the users IP address or [show_hostname] to show the users hostname on any page.
-Version: 1.0
+Version: 1.1
 Requires at least: 4.8
-Tested up to: 5.5
+Tested up to: 6.7.1
 Requires PHP: 5.6
-Author: druffko
-Author URI: https://druffko.gg
+Author: massimo-rnd
+Author URI: https://massimo.gg
 License: MIT
 
-Copyright (c) 2024 druffko. All rights reserved.
+Copyright (c) 2024 massimo-rnd. All rights reserved.
 */
 
 function gui_get_ip() {
-	if ( ! empty( $_SERVER['HTTP_CLIENT_IP'] ) ) {
-	$ip = $_SERVER['HTTP_CLIENT_IP'];
-} elseif ( ! empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
-	$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-} else {
-	$ip = $_SERVER['REMOTE_ADDR'];
-}
-	return apply_filters( 'wpb_get_ip', $ip );
+    $ip = '';
+
+    if ( ! empty( $_SERVER['HTTP_CLIENT_IP'] ) ) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif ( ! empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
+        // Sometimes HTTP_X_FORWARDED_FOR can return a comma-separated list of IPs
+        $ipList = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+        $ip = trim($ipList[0]); // Take the first IP in the list
+    } elseif ( ! empty( $_SERVER['REMOTE_ADDR'] ) ) {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+
+    // Validate the IP address
+    if ( filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_IPV6 ) === false ) {
+        $ip = 'Unknown'; // Set to 'Unknown' if the IP is invalid
+    }
+
+    return apply_filters( 'wpb_get_ip', $ip );
 }
 
 function gui_get_hostname() {
